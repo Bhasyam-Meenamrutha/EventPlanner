@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "EventPlanner_backend": {
+      "main": "src/EventPlanner_backend/main.mo",
+      "type": "motoko"
+    },
+    "EventPlanner_frontend": {
+      "dependencies": [
+        "EventPlanner_backend"
+      ],
+      "source": [
+        "src/EventPlanner_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "EventPlanner_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
